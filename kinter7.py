@@ -17,7 +17,7 @@ Label1 = Label(root, text="response here")
 def popup():
     global response, Label1
     response = messagebox.showinfo("Titlebar", "This is the message")
-    if response == "ok":
+    if response != "SCAPEGOAT":
         Label1.config(text=response)
 
 button1 = Button(root, text="Popup", command=popup)
